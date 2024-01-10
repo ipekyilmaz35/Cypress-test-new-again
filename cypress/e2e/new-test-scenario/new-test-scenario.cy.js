@@ -1,16 +1,21 @@
 describe('SDEP-5657-1 Test Scenario', () => {
   it('User Opens Google page, types "dog", waits for response, and clicks the first link', () => {
+
     // 1. User Opens Google page
     cy.visit('https://www.google.com')
 
     // 2. Type "dog" in google input
-    cy.get('#searchInput').type('dog');
-    cy.get('#searchInput').type('{enter}');
+    cy.visit('https://www.google.com');
+    // As Kanchan recommended, I typed here in 2 lines below:
+    cy.get('#APjFqb').type('dog');
+    cy.get('#APjFqb').type('{enter}');
     
      // Wait for response from Google. Just example seconds
-     cy.wait(3000) 
+     cy.wait(10000) 
 
-    // 4. Click on the first link provided by Google page. (This code selects the first "a" link inside the "h3" headers to click on the first link from the results of a Google search.)
-    cy.get('h3 > a').first().click()
+    // 4. Click on the first link provided by Google page. 
+    // As Iga recommended I used Cypress locator feature in here.
+    cy.get(':nth-child(1) > .MjjYud > .g > .srKDX > .jGGQ5e > .yuRUbf > :nth-child(1) > [jscontroller="msmzHf"] > a > .LC20lb').click();
   })
 })
+
