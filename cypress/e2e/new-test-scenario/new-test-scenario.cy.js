@@ -4,14 +4,15 @@ describe('SDEP-5657-1 Test Scenario', () => {
     // 1. User Opens Google page
     cy.visit('https://www.google.com')
 
-    // 2. Type "dog" in google input
+    //Google terms:
+    cy.get('#L2AGLb > div').click();
+    
+    // 2. Type "dog" in google input   
     cy.visit('https://www.google.com');
-    // As Kanchan recommended, I typed here in 2 lines below:
-    cy.get('#APjFqb').type('dog');
-    cy.get('#APjFqb').type('{enter}');
+    cy.get('#APjFqb').type('dog').type('{enter}');
     
      // Wait for response from Google. Just example seconds
-     cy.wait(10000) 
+     cy.wait(15000) 
 
     // 4. Click on the first link provided by Google page. 
     // As Iga recommended I used Cypress locator feature in here.
