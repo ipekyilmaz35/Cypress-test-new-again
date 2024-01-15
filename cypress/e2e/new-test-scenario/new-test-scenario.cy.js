@@ -12,7 +12,7 @@ describe('SDEP-5657-1 Test Scenario', () => {
     cy.get('#APjFqb').type('dog').type('{enter}');
     
     // Wait for response from Google. Just example seconds
-    cy.wait(3000) 
+    cy.wait(3000); 
 
     // 4. Click on the first link provided by Google page. (Iga's recommendation)
     cy.get('h3').eq(1).click({force: true});
