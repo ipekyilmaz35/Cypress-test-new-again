@@ -1,2 +1,4 @@
 cypress/screenshots/*
 cypress/fixtures/*
+*.img
+*.png
