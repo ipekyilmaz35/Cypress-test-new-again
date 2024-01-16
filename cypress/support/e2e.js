@@ -20,3 +20,4 @@ import './commands'
 // require('./commands')
 
 before(() => { cy.intercept({ resourceType: /xhr|fetch/ }, { log: false }); });
+
