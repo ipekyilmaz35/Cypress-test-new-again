@@ -3,15 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "test": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.6.1"
-  },
-  "cypress": {
-    "baseUrl": "https://www.google.com"
+    "cypress": "^13.6.2"
   },
   "dependencies": {
     "aggregate-error": "^3.1.0",

@@ -2,13 +2,13 @@ describe('SDEP-5657-1 Test Scenario', () => {
   it('User Opens Google page, types "dog", waits for response, and clicks the first link', () => {
 
     // 1. User Opens Google page
-    cy.visit('https://www.google.com');
+    cy.visit('/');
 
-    //Google terms:
+    //Google terms:z
     cy.get('#L2AGLb > div').click();
     
     // 2. Type "dog" in google input   
-    cy.visit('https://www.google.com');
+    cy.visit('/');
     cy.get('#APjFqb').type('dog').type('{enter}');
     
     // Wait for response from Google. Just example seconds
