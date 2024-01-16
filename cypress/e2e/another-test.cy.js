@@ -7,7 +7,6 @@ describe('SDEP-5657-2 Test Scenario', () => {
     cy.get('#L2AGLb > div').click();
     
     // 2. Type "dog" in google input
-    cy.visit('/');
     cy.get('#APjFqb').type('dog').type('{enter}');
 
     // 3. Wait some seconds for search results to load
