@@ -4,7 +4,7 @@ describe('SDEP-5657-1 Test Scenario', () => {
     // 1. User Opens Google page
     cy.visit('https://www.google.com');
 
-    //Google terms:
+    //Google terms:z
     cy.get('#L2AGLb > div').click();
     
     // 2. Type "dog" in google input   
