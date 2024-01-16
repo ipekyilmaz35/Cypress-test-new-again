@@ -8,7 +8,7 @@ describe('SDEP-5657-1 Test Scenario', () => {
     cy.get('#L2AGLb > div').click();
     
     // 2. Type "dog" in google input   
-    cy.visit('https://www.google.com');
+    cy.visit('/');
     cy.get('#APjFqb').type('dog').type('{enter}');
     
     // Wait for response from Google. Just example seconds
